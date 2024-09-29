@@ -1,17 +1,42 @@
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Prime or not");
         MathUtil.isPrime(5);
         if (MathUtil.isPrime(5)) {
             System.out.println("Prime number");
         } else { System.out.println("Not Prime number");}
+        MathUtil.isPrime(9);
+        if (MathUtil.isPrime(9)) {
+            System.out.println("Prime number");
+        } else { System.out.println("Not Prime number");}
+        MathUtil.isPrime(-9);
+        if (MathUtil.isPrime(-9)) {
+            System.out.println("Prime number");
+        } else { System.out.println("Not Prime number");}
 
+        System.out.println();
+        System.out.println("GCD");
         System.out.println(MathUtil.gcd(9,36));
+        System.out.println(MathUtil.gcd(8,44));
+        System.out.println(MathUtil.gcd(4,16));
 
+        System.out.println();
+        System.out.println("LCM");
         System.out.println(MathUtil.lcm(9,6));
+        System.out.println(MathUtil.lcm(3,9));
+        System.out.println(MathUtil.lcm(2,60));
 
+        System.out.println();
+        System.out.println("Fibonacci");
         System.out.println(MathUtil.fibonacci(6));
+        System.out.println(MathUtil.fibonacci(5));
+        System.out.println(MathUtil.fibonacci(0));
 
+        System.out.println();
+        System.out.println("Factorial");
         System.out.println(MathUtil.factorial(5));
+        System.out.println(MathUtil.factorial(8));
+        System.out.println(MathUtil.factorial(2));
     }
 
 }
