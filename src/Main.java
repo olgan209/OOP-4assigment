@@ -37,29 +37,41 @@ public class Main {
         System.out.println(MathUtil.factorial(5));
         System.out.println(MathUtil.factorial(8));
         System.out.println(MathUtil.factorial(2));
+
+        System.out.println();
+        System.out.println("Is perfect number");
+        MathUtil util = new MathUtil();
+        System.out.println(util.idPerfectNumber(6));
+        System.out.println(util.idPerfectNumber(90));
+        System.out.println(util.idPerfectNumber(2));
+
+        System.out.println();
+        System.out.println("Sum of digits");
+        MathUtil sum = new MathUtil();
+        System.out.println(sum.sumOfDigits(61));
+        System.out.println(sum.sumOfDigits(910));
+        System.out.println(sum.sumOfDigits(32));
+
+        System.out.println();
+        System.out.println("Reverse of digits");
+        MathUtil reverse = new MathUtil();
+        System.out.println(reverse.reverseNumber(61432));
+        System.out.println(reverse.reverseNumber(910));
+        System.out.println(reverse.reverseNumber(32));
+
+        System.out.println();
+        System.out.println("Is Armstrong Number");
+        MathUtil armstrong = new MathUtil();
+        System.out.println(armstrong.isArmstrongNumber(61));
+        System.out.println(armstrong.isArmstrongNumber(910));
+        System.out.println(armstrong.isArmstrongNumber(372));
+
+        System.out.println();
+        System.out.println("Is Next Prime Number");
+        MathUtil prime = new MathUtil();
+        System.out.println(prime.nextPrime(61));
+        System.out.println(prime.nextPrime(910));
+        System.out.println(prime.nextPrime(372));
     }
 
 }
-
-
-
-//isPerfectNumber(int n)
-//
-//Description: Determines if the given number n is a perfect number (a number equal to the sum of its divisors, excluding itself).
-//Returns: true if the number is perfect, otherwise false.
-//sumOfDigits(int n)
-//
-//Description: Computes the sum of the digits of the given number n.
-//Returns: The sum of the digits of n.
-//reverseNumber(int n)
-//
-//Description: Reverses the digits of a number n.
-//Returns: The number formed by reversing the digits of n.
-//isArmstrongNumber(int n)
-//
-//Description: Checks if a number is an Armstrong number (a number that is equal to the sum of its own digits each raised to the power of the number of digits).
-//Returns: true if n is an Armstrong number, otherwise false.
-//nextPrime(int n)
-//
-//Description: Finds the smallest prime number greater than n.
-//Returns: The next prime number after n.
